@@ -11,7 +11,7 @@ Policy economics: return Rs1,150; confirmation call Rs45; pilot prevented ~35% o
 Canonical training return prevalence is ~11.4%, so an all-negative classifier is already ~88.6% accurate. This project evaluates ranking quality with Average Precision and ROC-AUC, then evaluates the actual intervention at an operating threshold.
 
 ## Privacy
-The raw task-pack files are client data and are gitignored. Do not use a public repository containing them.
+The raw task-pack files are client data and are **intentionally not committed** to this repository (gitignored). Place your own copy of the supplied files locally before running anything; do not commit them.
 
 Place the supplied files here:
 
@@ -66,7 +66,9 @@ uvicorn app:app --reload
 - employee-readable local reasons
 - guardrail against automatic model-only holds
 
-`GET /health` is a smoke-test endpoint.
+`GET /health` is a smoke-test endpoint. `GET /` serves the browser screen that calls `/predict`.
+
+No paid API key or model API is required to run any part of this project; inference is local CatBoost + scikit-learn.
 
 ## Data decisions
 - One row per `order_id`; duplicate partner-feed re-imports are checked then collapsed to the crm copy.
