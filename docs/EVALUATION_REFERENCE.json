@@ -1,0 +1,237 @@
+{
+  "target": {
+    "canonical_n": 10504,
+    "returns": 1200,
+    "return_rate": 0.11424219345011424,
+    "majority_accuracy": 0.8857578065498858
+  },
+  "folds": [
+    {
+      "fold": "2025Q4",
+      "train_n": 4170,
+      "valid_n": 2082,
+      "valid_start": "2025-10-01",
+      "valid_end_exclusive": "2026-01-01",
+      "logistic": {
+        "n": 2082,
+        "positive_rate": 0.10806916426512968,
+        "roc_auc": 0.7595644109375935,
+        "average_precision": 0.31996022131513824,
+        "brier": 0.08711787440163091,
+        "accuracy_at_0_5": 0.8914505283381364,
+        "precision_at_0_5": 0.4915254237288136,
+        "recall_at_0_5": 0.1288888888888889
+      },
+      "catboost": {
+        "n": 2082,
+        "positive_rate": 0.10806916426512968,
+        "roc_auc": 0.7577095674026207,
+        "average_precision": 0.31928379777180416,
+        "brier": 0.08605749805913464,
+        "accuracy_at_0_5": 0.8938520653218059,
+        "precision_at_0_5": 0.6,
+        "recall_at_0_5": 0.05333333333333334
+      },
+      "ensemble": {
+        "n": 2082,
+        "positive_rate": 0.10806916426512968,
+        "roc_auc": 0.7656865912762519,
+        "average_precision": 0.3279225061714515,
+        "brier": 0.08524547181692839,
+        "accuracy_at_0_5": 0.8933717579250721,
+        "precision_at_0_5": 0.5454545454545454,
+        "recall_at_0_5": 0.08
+      },
+      "business_theoretical_threshold": {
+        "threshold": 0.11180124223602485,
+        "flagged": 631,
+        "flag_rate": 0.30307396733909703,
+        "true_returns_in_flagged": 152,
+        "precision": 0.24088748019017434,
+        "recall": 0.6755555555555556,
+        "expected_prevented_returns": 53.199999999999996,
+        "gross_avoided_return_cost_rs": 61179.99999999999,
+        "call_cost_rs": 28395.0,
+        "net_savings_rs": 32784.99999999999,
+        "net_savings_per_order_rs": 15.746878001921226
+      },
+      "business_empirical_best_threshold": {
+        "threshold": 0.12000000000000001,
+        "flagged": 578,
+        "flag_rate": 0.27761767531219983,
+        "true_returns_in_flagged": 149,
+        "precision": 0.2577854671280277,
+        "recall": 0.6622222222222223,
+        "expected_prevented_returns": 52.15,
+        "gross_avoided_return_cost_rs": 59972.5,
+        "call_cost_rs": 26010.0,
+        "net_savings_rs": 33962.5,
+        "net_savings_per_order_rs": 16.312439961575407
+      }
+    },
+    {
+      "fold": "2026Q1",
+      "train_n": 6252,
+      "valid_n": 2126,
+      "valid_start": "2026-01-01",
+      "valid_end_exclusive": "2026-04-01",
+      "logistic": {
+        "n": 2126,
+        "positive_rate": 0.11618062088428975,
+        "roc_auc": 0.7652662174944463,
+        "average_precision": 0.36998484810984633,
+        "brier": 0.08813186240696667,
+        "accuracy_at_0_5": 0.8904045155221072,
+        "precision_at_0_5": 0.625,
+        "recall_at_0_5": 0.1417004048582996
+      },
+      "catboost": {
+        "n": 2126,
+        "positive_rate": 0.11618062088428975,
+        "roc_auc": 0.772917371416013,
+        "average_precision": 0.38659772420676114,
+        "brier": 0.08808294012583069,
+        "accuracy_at_0_5": 0.889934148635936,
+        "precision_at_0_5": 0.8421052631578947,
+        "recall_at_0_5": 0.06477732793522267
+      },
+      "ensemble": {
+        "n": 2126,
+        "positive_rate": 0.11618062088428975,
+        "roc_auc": 0.7742877273422638,
+        "average_precision": 0.38689041113283473,
+        "brier": 0.08716203106911281,
+        "accuracy_at_0_5": 0.8913452492944497,
+        "precision_at_0_5": 0.7352941176470589,
+        "recall_at_0_5": 0.10121457489878542
+      },
+      "business_theoretical_threshold": {
+        "threshold": 0.11180124223602485,
+        "flagged": 741,
+        "flag_rate": 0.34854186265286924,
+        "true_returns_in_flagged": 171,
+        "precision": 0.23076923076923078,
+        "recall": 0.6923076923076923,
+        "expected_prevented_returns": 59.849999999999994,
+        "gross_avoided_return_cost_rs": 68827.5,
+        "call_cost_rs": 33345.0,
+        "net_savings_rs": 35482.5,
+        "net_savings_per_order_rs": 16.689793038570084
+      },
+      "business_empirical_best_threshold": {
+        "threshold": 0.13,
+        "flagged": 615,
+        "flag_rate": 0.28927563499529635,
+        "true_returns_in_flagged": 161,
+        "precision": 0.26178861788617885,
+        "recall": 0.6518218623481782,
+        "expected_prevented_returns": 56.349999999999994,
+        "gross_avoided_return_cost_rs": 64802.49999999999,
+        "call_cost_rs": 27675.0,
+        "net_savings_rs": 37127.49999999999,
+        "net_savings_per_order_rs": 17.463546566321728
+      }
+    },
+    {
+      "fold": "2026Q2",
+      "train_n": 8378,
+      "valid_n": 2126,
+      "valid_start": "2026-04-01",
+      "valid_end_exclusive": "2026-07-01",
+      "logistic": {
+        "n": 2126,
+        "positive_rate": 0.11523988711194733,
+        "roc_auc": 0.7761807115190573,
+        "average_precision": 0.4030796803018463,
+        "brier": 0.08608884983352239,
+        "accuracy_at_0_5": 0.8969896519285042,
+        "precision_at_0_5": 0.696969696969697,
+        "recall_at_0_5": 0.18775510204081633
+      },
+      "catboost": {
+        "n": 2126,
+        "positive_rate": 0.11523988711194733,
+        "roc_auc": 0.7747897883236229,
+        "average_precision": 0.40980898229926704,
+        "brier": 0.0858990830454837,
+        "accuracy_at_0_5": 0.8936970837253058,
+        "precision_at_0_5": 0.8064516129032258,
+        "recall_at_0_5": 0.10204081632653061
+      },
+      "ensemble": {
+        "n": 2126,
+        "positive_rate": 0.11523988711194733,
+        "roc_auc": 0.7796764638869902,
+        "average_precision": 0.41363719447667724,
+        "brier": 0.08508008344193663,
+        "accuracy_at_0_5": 0.894167450611477,
+        "precision_at_0_5": 0.7380952380952381,
+        "recall_at_0_5": 0.12653061224489795
+      },
+      "business_theoretical_threshold": {
+        "threshold": 0.11180124223602485,
+        "flagged": 729,
+        "flag_rate": 0.34289746001881466,
+        "true_returns_in_flagged": 171,
+        "precision": 0.2345679012345679,
+        "recall": 0.6979591836734694,
+        "expected_prevented_returns": 59.849999999999994,
+        "gross_avoided_return_cost_rs": 68827.5,
+        "call_cost_rs": 32805.0,
+        "net_savings_rs": 36022.5,
+        "net_savings_per_order_rs": 16.94379115710254
+      },
+      "business_empirical_best_threshold": {
+        "threshold": 0.13,
+        "flagged": 603,
+        "flag_rate": 0.28363123236124177,
+        "true_returns_in_flagged": 159,
+        "precision": 0.263681592039801,
+        "recall": 0.6489795918367347,
+        "expected_prevented_returns": 55.65,
+        "gross_avoided_return_cost_rs": 63997.5,
+        "call_cost_rs": 27135.0,
+        "net_savings_rs": 36862.5,
+        "net_savings_per_order_rs": 17.33889934148636
+      }
+    }
+  ],
+  "primary_metric": "average_precision",
+  "secondary_metric": "roc_auc",
+  "deployed_model": "50/50 probability average of logistic regression and CatBoost",
+  "ensemble_catboost_weight": 0.5,
+  "catboost_params": {
+    "iterations": 100,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "loss_function": "Logloss",
+    "l2_leaf_reg": 5,
+    "random_seed": 42,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "call_break_even_probability": 0.11180124223602485,
+  "ensemble_oof": {
+    "n": 6334,
+    "positive_rate": 0.11319861067256079,
+    "roc_auc": 0.7732200688833385,
+    "average_precision": 0.3742873922453297,
+    "brier": 0.08583325035891001,
+    "accuracy_at_0_5": 0.8929586359330597,
+    "precision_at_0_5": 0.6788990825688074,
+    "recall_at_0_5": 0.10320781032078104
+  },
+  "ensemble_oof_best_call_threshold": {
+    "threshold": 0.13,
+    "flagged": 1731,
+    "flag_rate": 0.2732870224186928,
+    "true_returns_in_flagged": 456,
+    "precision": 0.2634315424610052,
+    "recall": 0.6359832635983264,
+    "expected_prevented_returns": 159.6,
+    "gross_avoided_return_cost_rs": 183540.0,
+    "call_cost_rs": 77895.0,
+    "net_savings_rs": 105645.0,
+    "net_savings_per_order_rs": 16.679033785917273
+  }
+}
